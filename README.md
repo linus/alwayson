@@ -4,6 +4,16 @@ Jag har skaffat domänen alwayson.one som jag tänkte använda för att lägga u
 
 Tänkte att man skulle kunna använda Spotifys API för att läsa och displaya listorna bara. Och sen vänta på en take-down notice:)
 
+## More requirements
+
+Jag vet inte riktigt hur jag tänkt med playlistsen, för det går ju att embedda dom liksom, med player och hela skiten. Enklaste lösningen kan jag tänka mig. 
+
+Nu kan man sätta en egen cover art på varje playlist också, vet inte om man kan hämta den infon bara.
+
+Det som dock hade varit så fett är om man kunde scrapea playlistsen på nått vänster så att tracksen är sökbara, så om man jagar en låt el artist listas playlistsen låten är med i.
+
+Sen hade en rolig grej varit att spärra siten endast i Californien, för det är säkert där Apples legal sitter, haha
+
 ## Spotify
 
 ### Authorization
