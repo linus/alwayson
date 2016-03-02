@@ -13,7 +13,7 @@ We should be able to use the [Client Credentials flow](https://developer.spotify
     $ CLIENT_ID=clientid
     $ CLIENT_SECRET=clientsecret
     $ AUTH=$(echo -n "$CLIENT_ID:$CLIENT_SECRET" | base64 -w 0)
-    $ ACCESS_TOKEN=$(curl -s -H "Authorization: Basic $AUTH" -d grant_type=client_credentials | jq -r .access_token)
+    $ ACCESS_TOKEN=$(curl -s -H "Authorization: Basic $AUTH" -d grant_type=client_credentials https://accounts.spotify.com/api/token | jq -r .access_token)
 
 ### Getting the playlists
 
