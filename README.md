@@ -21,6 +21,8 @@ With the `access_token`, it should be as simple as
 
     $ USER_ID=userid
     $ PLAYLISTS=$(curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://api.spotify.com/v1/users/$USER_ID/playlists?limit=50 | jq -r .items[].name)
+    $ PLAYLIST_HREFS=$(curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://api.spotify.com/v1/users/$USER_ID/playlists?limit=50 | jq -r .items[].href)
+    $ for url in $PLAYLIST_HREFS; do curl -s -H "Authorization: Bearer $ACCESS_TOKEN" $url | jq '"Playlist \(.name), \(.tracks.items[].track.name)"'; done
 
 ## Web app
 
